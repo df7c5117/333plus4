@@ -49,10 +49,10 @@
                 "district":"【下屬區劃】"
             }
         ],
-        "img":"./res/img/Beijing-Tianjin-Hebei.svg"
+        "img":"【圖片地址】"
     }
 ],
-"numofCities":"57",
+"numofCities":"【城市達成數量】",
 "cities":[
    	{
         "name": "【城市名稱】",
