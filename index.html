@@ -1,0 +1,122 @@
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>叁叁叁+肆計劃</title>
+	<link href="https://fonts.proxy.ustclug.org/css?family=Noto+Serif+SC:300,400,700&display=swap" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/customize.css">
+	<script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+	<script>
+	new WOW().init();
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+<div id="app">
+	<div class="flex map">
+		<div class="container align-center">
+			<h1 class="mt-2 display-4 wow fadeIn bolder" data-wow-delay="0.2s">「叁叁叁 + 肆是一個超過二十年的計劃。</h1>
+			<h1 class="mt-2 display-4 wow fadeIn bolder" data-wow-delay="0.2s">它走不完也沒關係。」</h1>
+		</div>
+	</div>
+
+	<div class="flex stats">
+		<div class="container mt-5 mb-5" >
+			<h4 class="mt-5 wow fadeInUp">進度統計 *</h4>
+			<h1 class="mt-2 mb-5 display-4 wow fadeInUp bolder" v-for="(item,index) in stats" v-if="index==2" data-wow-delay="0.2s">{{item.percent}}%</h1>
+			<div v-for="(item,index) in stats">
+				<div class="mt-3 wow fadeInUp" :data-wow-delay="(0.4+index*0.1)+'s'">
+					<p>{{item.type}}<span class="red ml-3">{{item.num}} / {{item.all}}</span></p>
+					<div class="progress">
+						<div class="progress-bar bg-danger" role="progressbar" :style="{width:item.percent+'%'}" :aria-valuenow="item.percent" aria-valuemin="0" aria-valuemax="100">{{item.percent}}%</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<small class="mt-5">* 數據統計截至{{date}}。以上數據均不計算經由（航空中轉、鐵路公路經由），不計算中華民國行政區劃。</small>	
+		</div>
+	</div>
+
+	<div class="flex provinces">
+		<div class="container">
+			<h4 class="mt-5 wow fadeInUp">省 / 直轄市 / 自治區 / 特別行政區 **</h4>
+			<h1 class="mt-2 display-4 wow fadeInUp bolder" data-wow-delay="0.2s">{{numofProvinces}}</h1>
+
+			<div class="mb-5 mt-5" v-for="(province,index) in provinces">
+				<center><img class="mt-5" :src="province.img" width="70%"></img></center>
+				<h6 class="mt-5 wow fadeInUp" :style="{color:province.color}"><small>{{province.firstDate}}</small></h6>
+				<h1 class="mt-2 wow fadeInUp bolder" data-wow-delay="0.2s" :style="{color:province.color}">{{province.name}}</h1>
+				<p class="wow fadeInUp" data-wow-delay="0.4s">{{province.num}}</p>
+				<div class="progress wow fadeInUp" data-wow-delay="0.6s">
+						<div class="progress-bar bg-danger" role="progressbar" :style="{width:province.percent+'%'}" :aria-valuenow="province.percent" aria-valuemin="0" aria-valuemax="100">{{province.percent}}%</div>
+					</div>
+				<div class="row">
+					<div class="col-12 col-md-3 wow fadeInUp" v-for="(arrived,index) in province.arrived" :data-wow-delay="(0.6+index*0.02)+'s'">
+						<h5 class="mt-5">{{arrived.city}}</h5>
+						<h5 class="mt-2"><small>{{arrived.district}}</small></h5>
+					</div>
+					<div class="col-12 col-md-3 wow fadeInUp" v-for="(via,index) in province.via" :data-wow-delay="(0.6+index*0.02)+'s'">
+						<h5 class="mt-5 grey">{{via.city}}</h5>
+						<h5 class="mt-2 grey"><small>{{via.district}}</small></h5>
+					</div>
+				</div>
+			</div>
+
+			<small class="mt-5">** 數據統計截至{{date}}。部分省轄行政區不計入城市列表，但會在地圖中展示。<br>各省份城市列表計算經由（航空中轉、鐵路公路經由），城市名顯示爲<span class="grey">灰色</span>，地圖顯示為<span class="blue">藍色</span>。<br>已計算到達的城市不再重複計算經由。排名並非遵循到達次序。<span class="red">紅色名稱</span>為最近一次統計時新增省份。</small>
+			<br><br>
+			<small class="mt-5">*** 由於海南省的行政單位特殊，地圖僅展示地級市的達成情況。省轄縣級行政區不計入。</small>
+		</div>
+	</div>
+
+	<div class="flex cities">
+		<div class="container mt-5 mb-5">
+			<h4 class="mt-5 wow fadeInUp">地級市 / 地區 ****</h4>
+			<h1 class="mt-2 display-4 wow fadeInUp bolder" data-wow-delay="0.2s">{{numofCities}}</h1>
+			<h5><span class="mr-5 mt-5 nowrap wow fadeInUp" v-for="(city,index) in cities" :style="{color:city.color}" :data-wow-delay="(index*0.02)+'s'">{{city.name}}</span></h5>
+			<br>
+			<br>
+			<small class="mt-5">**** 數據統計截至{{date}}。各城市不計算經由（航空中轉、鐵路公路經由）。排名並非遵循到達次序。<span class="red">紅色名稱</span>為最近一次統計時新增城市。</small>
+		</div>
+	</div>
+
+	
+
+	
+
+</div>
+
+</body>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+<script>
+var app = new Vue({
+	el:'#app',
+	data(){
+		return{
+			date:[],
+			stats:[],
+			numofProvinces:[],
+			provinces:[],
+			numofCities:[],
+			cities:[]
+		}
+	},
+	mounted(){
+	axios
+		.get('./index.json')
+		.then(response => {
+			this.date=response.data.date;
+			this.stats=response.data.stats;
+			this.numofProvinces=response.data.numofProvinces;
+			this.provinces=response.data.provinces;
+			this.numofCities=response.data.numofCities;
+			this.cities=response.data.cities;
+		});
+	}
+})
+</script>
+</html>

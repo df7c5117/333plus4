@@ -1,0 +1,698 @@
+{
+"date":"2020.05.05",
+"stats":[
+    {
+        "type":"直轄市",
+        "num":"4",
+        "all":"4",
+        "percent":"100.00"
+    },{
+        "type":"省 / 自治區 / 特別行政區",
+        "num":"19",
+        "all":"34",
+        "percent":"55.88"
+    },{
+        "type":"地級市 / 地區",
+        "num":"53",
+        "all":"333",
+        "percent":"15.62"
+    }
+],
+"numofProvinces":"19",
+"provinces":[
+    {
+        "name":"北京市 / 天津市 / 河北省",
+        "firstDate":"2012.08 （北京） / 2018.09 （天津）",
+        "num":"2 / 13",        
+        "percent":"15.38",
+        "arrived":[
+            {
+                "city":"北京市",
+                "district":"東城區 / 西城區 / 朝陽區 / 豐臺區 / 延慶區"
+            },{
+                "city":"天津市",
+                "district":"河北區 / 河西區 / 紅橋區/ 和平區 / 南開區 / 北辰區"
+            }
+        ],
+        "via":[
+            {
+                "city":"石家莊市",
+                "district":"橋西區 / 欒城區 / 正定縣 / 元氏縣 / 高邑縣"
+            },{
+                "city":"邯鄲市",
+                "district":"復興區 / 沙河市 / 磁縣"
+            },{
+                "city":"邢臺市",
+                "district":"橋西區 / 臨城縣"
+            },{
+                "city":"保定市",
+                "district":"競秀區 / 定州市 / 高碑店市 / 涿州市 / 徐水縣 / 望都縣 / 定興縣"
+            },{
+                "city":"滄州市",
+                "district":"滄縣 / 青縣 / 吳橋縣 / 南皮縣"
+            }
+        ],
+        "img":"./res/img/Beijing-Tianjin-Hebei.svg"
+    },{
+        "name":"江蘇省 / 上海市",
+        "firstDate":"2019.05 （江蘇） / 2019.09 （上海）",
+        "num":"4 / 14",
+        "percent":"28.57",
+        "arrived":[
+            {
+                "city":"上海市",
+                "district":"長寧區 / 徐匯區 / 靜安區 / 黃浦區 / 虹口區 / 楊浦區"
+            },{
+                "city":"南京市",
+                "district":"鼓樓區 / 秦淮區 / 玄武區 / 建鄴區 / 雨花臺區"
+            },{
+                "city":"蘇州市",
+                "district":"姑蘇區 / 吳中區"
+            },{
+                "city":"連雲港市",
+                "district":"海州區 / 連雲區 / 東海縣"
+            }
+        ],
+        "via":[
+            {
+                "city":"常州市",
+                "district":"溧陽市"
+            },{
+                "city":"無錫市",
+                "district":"宜興市"
+            },{
+                "city":"徐州市",
+                "district":"鼓樓區 / 銅山區"
+            }
+        ],
+        "img":"./res/img/Shanghai-Jiangsu.svg"
+    },{
+        "name":"浙江省",
+        "firstDate":"2019.05",
+        "num":"1 / 11",
+        "percent":"9.09",
+        "arrived":[
+            {
+                "city":"杭州市",
+                "district":"西湖區 / 上城區 / 下城區 / 拱墅區 / 濱江區 / 蕭山區"
+            }
+        ],
+        "via":[
+            {
+                "city":"湖州市",
+                "district":"吳興區 / 德清縣"
+            }
+        ],
+        "img":"./res/img/Zhejiang.svg"
+    },{
+        "name":"安徽省",
+        "firstDate":"--",
+        "num":"0 / 16",
+        "percent":"0.00",
+        "via":[
+            {
+                "city":"蚌埠市",
+                "district":"淮上區 / 龍子湖區 / 固鎮縣"
+            },{
+                "city":"滁州市",
+                "district":"琅琊區 / 南譙區 / 明光市"
+            },{
+                "city":"宿州市",
+                "district":"埇橋區 / 碭山縣"
+            }
+        ],
+        "img":"./res/img/Anhui.svg"
+    },{
+        "name":"福建省",
+        "firstDate":"2017.08",
+        "num":"5 / 9",
+        "percent":"55.56",
+        "arrived":[
+            {
+                "city":"廈門市",
+                "district":"思明區 / 湖裡區 / 集美區 / 海滄區"
+            },{
+                "city":"三明市",
+                "district":"梅列區 / 三元區 / 沙縣 / 永安市"
+            },{
+                "city":"漳州市",
+                "district":"龍海市"
+            },{
+                "city":"南平市",
+                "district":"延平區 / 邵武市 / 光澤縣"
+            },{
+                "city":"龍岩市",
+                "district":"漳平市"
+            }
+        ],
+        "img":"./res/img/Fujian.svg"
+    },{
+        "name":"江西省",
+        "firstDate":"2017.08",
+        "num":"2 / 11",
+        "percent":"18.18",
+        "arrived":[
+            {
+                "city":"鷹潭市",
+                "district":"月湖區"
+            },{
+                "city":"撫州市",
+                "district":"資溪縣"
+            }
+        ],
+        "via":[
+            {
+                "city":"南昌市",
+                "district":"新建區"
+            },{
+                "city":"宜春市",
+                "district":"袁州區"
+            }
+        ],
+        "img":"./res/img/Jiangxi.svg"
+    },{
+        "name":"山東省",
+        "firstDate":"2018.08",
+        "num":"3 / 16",
+        "percent":"18.75",
+        "arrived":[
+            {
+                "city":"濟南市",
+                "district":"天橋區 / 歷下區"
+            },{
+                "city":"青島市",
+                "district":"市南區 / 市北區 / 李滄區 / 城陽區 / 嶗山區 / 黃島區 / 即墨區"
+            },{
+                "city":"威海市",
+                "district":"環翠區"
+            }
+        ],
+        "via":[
+            {
+                "city":"淄博市",
+                "district":"張店區 / 周村區 / 臨淄區"
+            },{
+                "city":"棗莊市",
+                "district":"薛城區 / 滕州市"
+            },{
+                "city":"烟臺市",
+                "district":"萊山區 / 牟平區 / 萊陽市 / 栖霞市"
+            },{
+                "city":"濰坊市",
+                "district":"濰城區 / 奎文區 / 高密市 / 青州市 / 昌樂縣" 
+            },{
+                "city":"濟寧市",
+                "district":"兗州區 / 曲阜市 / 鄒城市"
+            },{
+                "city":"泰安市",
+                "district":"泰山區 / 岱嶽區 / 寧陽縣"
+            },{
+                "city":"日照市",
+                "district":"袁州區"
+            },{
+                "city":"德州市",
+                "district":"德城區 / 禹城市 / 平原縣 / 齊河縣"
+            }
+        ],
+        "img":"./res/img/Shandong.svg"
+    },{
+        "name":"河南省",
+        "firstDate":"2015.08",
+        "num":"1 / 17",
+        "percent":"5.88",
+        "arrived":[
+            {
+                "city":"南陽市",
+                "district":"淅川縣"
+            }
+        ],
+        "via":[
+            {
+                "city":"鄭州市",
+                "district":"二七區 / 管城回族區 / 惠濟區 / 上街區 / 新鄭市 / 滎陽市 / 鞏義市 / 中牟縣"
+            },{
+                "city":"開封市",
+                "district":"禹王臺區 / 龍亭區 / 祥符區 / 蘭考縣"
+            },{
+                "city":"洛陽市",
+                "district":"西工區 / 老城區 / 瀍河回族區 / 洛龍區 / 偃師市 / 新安縣"
+            },{
+                "city":"安陽市",
+                "district":"北關區 / 安陽縣 / 龍安區 / 湯陰縣" 
+            },{
+                "city":"鶴壁市",
+                "district":"淇濱區 / 淇縣"
+            },{
+                "city":"新鄉市",
+                "district":"衛濱區 / 鳳泉區 / 衛輝市 / 新鄉縣 / 獲嘉縣"
+            },{
+                "city":"焦作市",
+                "district":"武陟縣"
+            },{
+                "city":"許昌市",
+                "district":"魏都區 / 建安區 / 長葛市"
+            },{
+                "city":"漯河市",
+                "district":"源匯區 / 郾城區 / 臨潁縣"
+            },{
+                "city":"三門峽市",
+                "district":"陝州區 / 湖濱區 / 靈寶市 / 義馬市 / 澠池縣"
+            },{
+                "city":"商丘市",
+                "district":"梁園區 / 寧陵縣 / 民權縣 / 夏邑縣"
+            },{
+                "city":"信陽市",
+                "district":"溮河區 / 平橋區"
+            },{
+                "city":"駐馬店市",
+                "district":"驛城區 / 確山縣 / 遂平縣 / 西平縣"
+            }
+        ],
+        "img":"./res/img/Henan.svg"
+    },{
+        "name":"湖北省",
+        "firstDate":"2000.02",
+        "num":"5 / 13",
+        "percent":"38.46",
+        "arrived":[
+            {
+                "city":"武漢市",
+                "district":"江漢區 / 漢陽區 / 武昌區"
+            },{
+                "city":"十堰市",
+                "district":"張灣區 / 茅箭區 / 鄖陽區 / 房縣 / 丹江口市"
+            },{
+                "city":"宜昌市",
+                "district":"西陵區 / 伍家崗區 / 點軍區 / 夷陵區 / 枝江市 / 長陽土家族自治縣"
+            },{
+                "city":"襄陽市",
+                "district":"樊城區"
+            },{
+                "city":"荊州市",
+                "district":"沙市區 / 松滋市"
+            }
+        ],
+        "via":[
+            {
+                "city":"孝感市",
+                "district":"孝南區 / 孝昌縣 / 雲夢縣 / 安陸市"
+            },{
+                "city":"咸寧市",
+                "district":"咸安區 / 赤壁市"
+            },{
+                "city":"隨州市",
+                "district":"曾都區 / 廣水市 / 隨縣" 
+            }
+        ],
+        "img":"./res/img/Hubei.svg"
+    },{
+        "name":"湖南省",
+        "firstDate":"2010.06",
+        "num":"7 / 14",
+        "percent":"50.00",
+        "arrived":[
+            {
+                "city":"長沙市",
+                "district":"天心區 / 雨花區 / 芙蓉區 / 嶽麓區"
+            },{
+                "city":"株洲市",
+                "district":"天元區 / 石峰區 / 荷塘區"
+            },{
+                "city":"邵陽市",
+                "district":"大祥區"
+            },{
+                "city":"岳陽市",
+                "district":"雲溪區"
+            },{
+                "city":"常德市",
+                "district":"澧縣 / 臨澧縣 / 津市市"
+            },{
+                "city":"郴州市",
+                "district":"北湖區 / 蘇仙區 / 宜章縣 / 永興縣"
+            },{
+                "city":"懷化市",
+                "district":"芷江侗族自治縣"
+            }
+        ],
+        "via":[
+            {
+                "city":"湘潭市",
+                "district":"雨湖區 / 岳塘區 / 湘潭縣 / 湘鄉市"
+            },{
+                "city":"衡陽市",
+                "district":"珠暉區 / 南嶽區 / 耒陽市 / 衡山縣 / 衡南縣"
+            },{
+                "city":"益陽市",
+                "district":"赫山區 / 桃江縣 / 安化縣"
+            },{
+                "city":"永州市",
+                "district":"冷水灘區 / 零陵區 / 雙牌縣 / 東安縣"
+            },{
+                "city":"婁底市",
+                "district":"婁星區 / 漣源市 / 新化縣 / 冷水江市" 
+            }
+        ],
+        "img":"./res/img/Hunan.svg"
+    },{
+        "name":"廣東省 / 香港特別行政區 / 澳門特別行政區",
+        "firstDate":"2006.06 （廣東）",
+        "num":"14 / 23",
+        "percent":"60.86",
+        "arrived":[
+            {
+                "city":"廣州市",
+                "district":"越秀區 / 天河區 / 荔灣區 / 海珠區 / 白雲區 / 黃埔區 / 番禺區 / 南沙區 / 花都區 / 增城區 / 從化區"
+            },{
+                "city":"深圳市",
+                "district":"南山區 / 羅湖區 / 寶安區 / 龍崗區 / 鹽田區"
+            },{
+                "city":"韶關市",
+                "district":"武江區 / 湞江區 / 曲江區 / 樂昌市"
+            },{
+                "city":"珠海市",
+                "district":"香洲區 / 金灣區"
+            },{
+                "city":"汕頭市",
+                "district":"龍湖區"
+            },{
+                "city":"佛山市",
+                "district":"南海區 / 順德區"
+            },{
+                "city":"湛江市",
+                "district":"麻章區 / 徐聞縣"
+            },{
+                "city":"肇慶市",
+                "district":"鼎湖區 / 高要區"
+            },{
+                "city":"惠州市",
+                "district":"惠陽區"
+            },{
+                "city":"河源市",
+                "district":"龍川縣"
+            },{
+                "city":"清遠市",
+                "district":"清城區 / 英德市 / 連州市"
+            },{
+                "city":"東莞市",
+                "district":"常平鎮 / 虎門鎮 / 企石鎮 / 樟木頭鎮"
+            },{
+                "city":"中山市",
+                "district":"東升鎮"
+            },{
+                "city":"揭陽市",
+                "district":"揭東區"
+            }
+        ],
+        "via":[
+            {
+                "city":"江門市",
+                "district":"新會區 / 鶴山市 / 臺山市 / 開平市 / 恩平市"
+            },{
+                "city":"陽江市",
+                "district":"江城區 / 陽東區 / 陽西縣"
+            },{
+                "city":"茂名市",
+                "district":"茂南區 / 電白區 / 化州市"
+            },{
+                "city":"梅州市",
+                "district":"梅江區 / 梅縣區 / 興寧市 / 大埔縣" 
+            },{
+                "city":"汕尾市",
+                "district":"海豐縣" 
+            }
+        ],
+        "img":"./res/img/Guangdong-HK-MA.svg"
+    },{
+        "name":"廣西壯族自治區",
+        "firstDate":"2017.05",
+        "num":"2 / 14",
+        "percent":"14.29",
+        "arrived":[
+            {
+                "city":"柳州市",
+                "district":"城中區 / 柳南區 / 柳北區 / 柳江區"
+            },{
+                "city":"桂林市",
+                "district":"象山區 / 曡彩區"
+            }
+        ],
+        "via":[
+            {
+                "city":"梧州市",
+                "district":"長洲區 / 蒼梧縣"
+            },{
+                "city":"賀州市",
+                "district":"八步區 / 鐘山縣"
+            },{
+                "city":"來賓市",
+                "district":"象州縣"
+            },{
+                "city":"貴港市",
+                "district":"平南縣" 
+            }
+        ],
+        "img":"./res/img/Guangxi.svg"
+    },{
+        "name":"海南省 ***",
+        "firstDate":"2013.05",
+        "num":"2 / 4",
+        "percent":"50.00",
+        "arrived":[
+            {
+                "city":"海口市",
+                "district":"秀英區 / 瓊山區 / 美蘭區"
+            },{
+                "city":"三亞市",
+                "district":"天涯區 / 吉陽區"
+            }
+        ],
+        "via":[
+            {
+                "city":"儋州市"
+            }
+        ],
+        "img":"./res/img/Hainan.svg"
+    },{
+        "name":"四川省 / 重慶市",
+        "firstDate":"2013.05 （四川） / 2019.10 （重慶）",
+        "num":"2 / 22",
+        "percent":"9.09",
+        "arrived":[
+            {
+                "city":"成都市",
+                "district":"成華區 / 金牛區 / 青羊區 / 武侯區 / 雙流區 / 都江堰市"
+            },{
+                "city":"重慶市",
+                "district":"渝中區 / 江北區 / 南岸區 / 九龍坡區 / 沙坪壩區"
+            }
+        ],
+        "via":[
+            {
+                "city":"德陽市",
+                "district":"中江縣"
+            },{
+                "city":"南充市",
+                "district":"嘉陵區 / 順慶區 / 高坪區 / 蓬安縣 / 營山縣"
+            },{
+                "city":"遂寧市",
+                "district":"船山區 / 大英縣"
+            },{
+                "city":"達州市",
+                "district":"達川區 / 通川區 / 宣漢縣 / 渠縣 / 萬源市"
+            },{
+                "city":"廣安市",
+                "district":"前鋒區 / 華鎣市"
+            }
+        ],
+        "img":"./res/img/Sichuan-Chongqing.svg"
+    },{
+        "name":"貴州省",
+        "firstDate":"2018.08",
+        "num":"1 / 9",
+        "percent":"11.11",
+        "arrived":[
+            {
+                "city":"黔東南苗族侗族自治州",
+                "district":"鎮遠縣 / 天柱縣"
+            }
+        ],
+        "via":[
+            {
+                "city":"銅仁市",
+                "district":"碧江區 / 松桃苗族自治縣"
+            }
+        ],
+        "img":"./res/img/Guizhou.svg"
+    },{
+        "name":"雲南省",
+        "firstDate":"2006.07",
+        "num":"3 / 16",
+        "percent":"18.75",
+        "arrived":[
+            {
+                "city":"昆明市",
+                "district":"官渡區 / 五華區 / 石林彜族自治縣"
+            },{
+                "city":"大理白族自治州",
+                "district":"大理市"
+            },{
+                "city":"麗江市",
+                "district":"古城區 / 玉龍納西族自治縣"
+            }
+        ],
+        "via":[
+            {
+                "city":"楚雄彜族自治州",
+                "district":"祿豐縣 / 南華縣"
+            }
+        ],
+        "img":"./res/img/Yunnan.svg"
+    },{
+        "name":"陝西省",
+        "firstDate":"2018.10",
+        "num":"3 / 10",
+        "percent":"30.00",
+        "arrived":[
+            {
+                "city":"西安市",
+                "district":"新城區 / 蓮湖區 / 碑林區 / 未央區 / 雁塔區 / 長安區 / 鄠邑區"
+            },{
+                "city":"寶鷄市",
+                "district":"渭濱區 / 金臺區 / 眉縣"
+            },{
+                "city":"咸陽市",
+                "district":"楊陵區"
+            }
+        ],
+        "via":[
+            {
+                "city":"安康市",
+                "district":"漢濱區 / 紫陽縣 / 旬陽縣 / 白河縣"
+            },{
+                "city":"渭南市",
+                "district":"臨渭區 / 華州區 / 華陰市"
+            }
+        ],
+        "img":"./res/img/Shaanxi.svg"
+    }
+],
+"numofCities":"57",
+"cities":[
+    {
+        "name": "北京市"
+    },{
+        "name": "天津市"
+    },{
+        "name": "上海市"
+    },{
+        "name": "重慶市"
+    },{
+        "name": "南京市"
+    },{
+        "name": "蘇州市"
+    },{
+        "name": "連雲港市"
+    },{
+        "name": "杭州市"
+    },{
+        "name": "廈門市"
+    },{
+        "name": "三明市"
+    },{
+        "name": "漳州市"
+    },{
+        "name": "南平市"
+    },{
+        "name": "龍岩市"
+    },{
+        "name": "鷹潭市"
+    },{
+        "name": "撫州市"
+    },{
+        "name": "濟南市"
+    },{
+        "name": "青島市"
+    },{
+        "name": "威海市"
+    },{
+        "name": "南陽市"
+    },{
+        "name": "武漢市"
+    },{
+        "name": "十堰市"
+    },{
+        "name": "宜昌市"
+    },{
+        "name": "襄陽市"
+    },{
+        "name": "荊州市"
+    },{
+        "name": "長沙市"
+    },{
+        "name": "株洲市",
+        "color":"#CD0000"
+    },{
+        "name": "邵陽市"
+    },{
+        "name": "岳陽市"
+    },{
+        "name": "常德市"
+    },{
+        "name": "郴州市"
+    },{
+        "name": "懷化市"
+    },{
+        "name": "廣州市"
+    },{
+        "name": "深圳市"
+    },{
+        "name": "韶關市"
+    },{
+        "name": "珠海市"
+    },{
+        "name": "汕頭市"
+    },{
+        "name": "佛山市"
+    },{
+        "name": "湛江市"
+    },{
+        "name": "肇慶市"
+    },{
+        "name": "惠州市"
+    },{
+        "name": "河源市"
+    },{
+        "name": "清遠市"
+    },{
+        "name": "東莞市"
+    },{
+        "name": "中山市"
+    },{
+        "name": "揭陽市"
+    },{
+        "name": "柳州市"
+    },{
+        "name": "桂林市"
+    },{
+        "name": "海口市"
+    },{
+        "name": "三亞市"
+    },{
+        "name": "成都市"
+    },{
+        "name": "黔東南苗族侗族自治州"
+    },{
+        "name": "昆明市"
+    },{
+        "name": "大理白族自治州"
+    },{
+        "name": "麗江市"
+    },{
+        "name": "西安市"
+    },{
+        "name": "寶鷄市"
+    },{
+        "name": "咸陽市"
+    }
+]
+}
