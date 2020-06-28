@@ -17,7 +17,7 @@ body{
 }
 body:after {
 	content: "";
-    background:linear-gradient(#00000044,#00000044),url("./../res/img/333plus4.svg")center no-repeat,#111;;
+    background:linear-gradient(#00000044,#00000044),url("./../res/img/333plus4.svg")center no-repeat,#111;
     position: fixed; 
     top: 0; 
     left: 0; 
