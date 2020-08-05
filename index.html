@@ -55,11 +55,11 @@
 						<div class="progress-bar bg-danger" role="progressbar" :style="{width:province.percent+'%'}" :aria-valuenow="province.percent" aria-valuemin="0" aria-valuemax="100">{{province.percent}}%</div>
 					</div>
 				<div class="row">
-					<div class="col-12 col-md-3 wow fadeInUp" v-for="(arrived,index) in province.arrived" :data-wow-delay="(0.6+index*0.02)+'s'">
+					<div class="col-12 col-md-3 wow fadeInUp" v-for="(arrived,index) in province.arrived" :data-wow-delay="(0.6+index*0.06)+'s'">
 						<h5 class="mt-5">{{arrived.city}}</h5>
 						<h5 class="mt-2"><small>{{arrived.district}}</small></h5>
 					</div>
-					<div class="col-12 col-md-3 wow fadeInUp" v-for="(via,index) in province.via" :data-wow-delay="(0.6+index*0.02)+'s'">
+					<div class="col-12 col-md-3 wow fadeInUp" v-for="(via,index) in province.via" :data-wow-delay="(0.6+index*0.06)+'s'">
 						<h5 class="mt-5 grey">{{via.city}}</h5>
 						<h5 class="mt-2 grey"><small>{{via.district}}</small></h5>
 					</div>
